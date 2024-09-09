@@ -49,3 +49,46 @@ You will also need API keys from your preferred crypto trading platform (e.g., B
     ```bash
     pip install -r requirements.txt
     ```
+
+## Setting up the .env File
+
+The scripts require API keys to interact with the crypto exchange. You will need to create a .env file in the root of the project and add your API keys and secrets.
+
+1. **Create a .env file in the root directory:**
+
+    ```bash
+    touch .env
+    ```
+2. **Add your API keys to the .env file.**
+
+    The format should be as follows:
+
+    ```makefile
+    API_KEY=your_api_key_here
+    API_SECRET=your_api_secret_here
+    ```
+    Replace your_api_key_here and your_api_secret_here with the actual API key and secret obtained from your exchange account.
+
+## Running the Code
+1. **Test the market data using test.py:**
+
+    This script is used to retrieve and test market data from the crypto exchange.
+
+    ```bash
+    python test.py
+    ```
+    This will run the script, and you should see market data output if the API keys are correctly set up.
+
+2. **Place an order using make_order.py:**
+
+    This script allows you to place a crypto order (buy or sell) on the exchange.
+
+    ```bash
+    python make_order.py
+    ```
+    The script will execute an order based on the logic implemented in make_order.py.
+
+## Troubleshooting
+- If you encounter issues with API keys, ensure that they are correctly entered in the .env file and that your exchange account has API trading enabled.
+- Make sure to activate the virtual environment before running the scripts.
+
