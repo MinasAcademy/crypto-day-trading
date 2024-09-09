@@ -27,23 +27,25 @@ You will also need API keys from your preferred crypto trading platform (e.g., B
 
 2. **Set up a Python virtual environment:**
 
-It's recommended to use a virtual environment to manage dependencies. You can set one up with the following commands:
+    It's recommended to use a virtual environment to manage dependencies. You can set one up with the following commands:
 
-For Windows:
+    For Windows:
 
-bash
-Copy code
-python -m venv venv
-venv\Scripts\activate
-For macOS/Linux:
+    ```bash
+    python -m venv venv
+    venv\Scripts\activate
+    ```
 
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
+    For macOS/Linux:
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
 
-Install the required dependencies: After activating the virtual environment, install the dependencies listed in the requirements.txt file:
+3. **Install the required dependencies:** 
 
-```bash
-pip install -r requirements.txt
-```
+    After activating the virtual environment, install the dependencies listed in the requirements.txt file:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
